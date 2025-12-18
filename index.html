@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Mey Nur Afni</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .skill-card {
+            padding: 1rem;
+            background: rgb(212, 238, 248);
+            border-radius: 0.75rem;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .skill-card:hover {
+            background: #eff6ff;
+            color: #2563eb;
+            transform: translateY(-4px);
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            background: #f1f5f9;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+
+<body class="text-slate-800 bg-slate-50">
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold">
+                MY.<span class="text-blue-600">Porto</span>
+            </div>
+            <div class="space-x-8 text-sm font-medium hidden md:flex">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="pt-32 pb-20 px-6 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left" data-aos="fade-right">
+                <p class="text-blue-600 font-medium mb-2">Halo, Saya</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    <span class="text-slate-900">Mey</span>
+                    <span class="text-blue-600">Nur Afni</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8">
+                    Lulusan D3 Manajemen Informatika yang siap berkontribusi
+                    dan berkembang di dunia kerja.
+                </p>
+                <a href="#projects" class="inline-block bg-gradient-to-r from-blue-600 to-indigo-600
+                      text-white px-8 py-3 rounded-full
+                      hover:scale-105 transition shadow-lg shadow-blue-200">
+                    Lihat Portofolio
+                </a>
+            </div>
+
+            <div class="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-tr from-blue-500 to-indigo-500
+                    p-1 rounded-full shadow-xl" data-aos="fade-left">
+                <div class="w-full h-full bg-white rounded-full overflow-hidden">
+                    <img src="image/profile.jpg" alt="Foto Profil" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-white px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">
+                Tentang Saya
+                <span class="block w-16 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></span>
+            </h2>
+
+            <p class="text-slate-600 mb-10" data-aos="fade-up" data-aos-delay="100">
+                Saya merupakan lulusan Program Diploma 3 Manajemen Informatika yang memiliki minat dan ketertarikan
+                tinggi di bidang Web Development dan Data Management. Saya memiliki pemahaman yang baik mengenai logika
+                pemrograman, pengelolaan basis data, serta manajemen sistem informasi. Selama masa studi, saya terbiasa
+                mengerjakan
+                proyek berbasis aplikasi web dan pengolahan data, sehingga terbentuk pola kerja yang sistematis, teliti,
+                dan berorientasi
+                pada solusi.Saya juga memiliki kemauan belajar yang tinggi serta mampu beradaptasi dengan cepat terhadap
+                teknologi dan lingkungan kerja baru.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100" data-aos="zoom-in">
+                    <h3 class="font-semibold text-blue-600 mb-2 italic">Pendidikan</h3>
+                    <p class="text-sm text-slate-500">D3 Manajemen Informatika</p>
+                    <p class="text-sm font-medium">Politeknik Negeri Jember (2022 - 2025)</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <h3 class="font-semibold text-blue-600 mb-2 italic">Minat</h3>
+                    <p class="text-sm text-slate-500">
+                        Administrasi, Pengolahan Data, Web, UI/UX
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20 px-6 bg-slate-50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+                Skills & Tools
+                <span class="block w-16 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></span>
+            </h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="skill-card" data-aos="flip-up">HTML & CSS</div>
+                <div class="skill-card" data-aos="flip-up">Laravel</div>
+                <div class="skill-card" data-aos="flip-up">MySQL</div>
+                <div class="skill-card" data-aos="flip-up">MS Office</div>
+                <div class="skill-card" data-aos="flip-up">Tailwind CSS</div>
+                <div class="skill-card" data-aos="flip-up">JavaScript</div>
+                <div class="skill-card" data-aos="flip-up">UI / UX</div>
+                <div class="skill-card" data-aos="flip-up">GitHub</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20 bg-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+                Project Terakhir
+                <span class="block w-16 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="border rounded-2xl overflow-hidden hover:shadow-xl transition" data-aos="fade-right">
+                    <a href="image/tajwid.jpg" target="_blank">
+                        <img src="image/tajwid.jpg" alt="Aplikasi Inventaris" class="h-48 w-full object-cover transition duration-500 hover:scale-110 cursor-zoom-in">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Game Edukasi Dasar Tajwid Berbasis Android</h3>
+                        <p class="text-sm text-slate-600 mb-4">
+                            Game edukasi untuk belajar tajwid pada anak-anak yang dirancang menggunakan Unity 2D dan
+                            database MySQL.
+                        </p>
+                        <span class="badge">Unity 2D</span>
+                        <span class="badge">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="border rounded-2xl overflow-hidden hover:shadow-xl transition" data-aos="fade-left">
+                    <a href="image/inventaris.png" target="_blank">
+                        <img src="image/inventaris.png" alt="Aplikasi Inventaris" class="h-48 w-full object-cover transition duration-500 hover:scale-110 cursor-zoom-in">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Aplikasi Web Inventaris Barang</h3>
+                        <p class="text-sm text-slate-600 mb-4">
+                            Aplikasi ini dirancang untuk mengelola data inventaris secara efisien melalui fiturCRUD
+                            (Create, Read, Update,Delete)
+                            menggunakan Framwork Laravel dan database MySQL.
+                        </p>
+                        <span class="badge">Laravel</span>
+                        <span class="badge">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="border rounded-2xl overflow-hidden hover:shadow-xl transition" data-aos="fade-left">
+                    <a href="image/presensi.png" target="_blank">
+                        <img src="image/presensi.png" alt="Landing Page UMKM" class="h-48 w-full object-cover transition duration-500 hover:scale-110 cursor-zoom-in">  
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Aplikasi Mobile E-Presensi</h3>
+                        <p class="text-sm text-slate-600 mb-4">
+                            Aplikasi ini merupakan aplikasi E-Presensi yang dirancang untuk melakukan 
+                            pencatatan kehadiran secara digital, dilengkapi dengan fitur riwayat presensi 
+                            dan didukung oleh teknologi GPS, menggunakan Flutter, Laravel, dan MySQL.
+                        </p>
+                        <span class="badge">Flutter</span>
+                        <span class="badge">Laravel</span>
+                        <span class="badge">MySQL</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Mari Terhubung</h2>
+            <p class="text-slate-600 mb-10">Saya terbuka untuk kesempatan kerja full-time maupun freelance.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="mailto:meynurafni11@gmail.com"
+                    class="bg-white border border-slate-200 px-6 py-4 rounded-2xl flex items-center justify-center gap-2 hover:bg-slate-50 transition">
+                    <span>📧</span> meynurafni11@gmail.com
+                </a>
+                <a href="https://wa.me/6285791259274" target="_blank"
+                    class="bg-green-500 text-white px-6 py-4 rounded-2xl flex items-center justify-center gap-2 hover:bg-green-600 transition">
+                    <span>💬</span> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-slate-400 bg-white border-t">
+        &copy; 2025 Mey Nur Afni
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Mey Nur Afni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .soft-bg { background-color: #f8fafc; }
+    </style>
+</head>
+<body class="text-slate-800 soft-bg">
+
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-semibold tracking-tight">MI.<span class="text-blue-500">Porto</span></div>
+            <div class="space-x-8 text-sm font-medium hidden md:flex">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <p class="text-blue-600 font-medium mb-2">Halo, Saya</p>
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-4 tracking-tight">Mey Nur Afni</h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">Lulusan D3 Manajemen Informatika yang berfokus pada pengembangan web dan solusi IT yang efisien.</p>
+                <a href="#projects" class="bg-slate-900 text-white px-8 py-3 rounded-full hover:bg-slate-700 transition shadow-lg shadow-slate-200">Lihat Portofolio</a>
+            </div>
+            <div class="w-48 h-48 md:w-64 md:h-64 bg-slate-200 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                <img src="image/profile.jpg" alt="Foto Profil" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Tentang Saya</h2>
+            <p class="text-slate-600 leading-relaxed mb-6">
+            Saya merupakan lulusan Program Diploma 3 Manajemen Informatika yang memiliki minat dan ketertarikan 
+            tinggi di bidang Web Development dan Data Management. Saya memiliki pemahaman yang baik mengenai logika 
+            pemrograman, pengelolaan basis data, serta manajemen sistem informasi. Selama masa studi, saya terbiasa mengerjakan 
+            proyek berbasis aplikasi web dan pengolahan data, sehingga terbentuk pola kerja yang sistematis, teliti, dan berorientasi 
+            pada solusi.Saya juga memiliki kemauan belajar yang tinggi serta mampu beradaptasi dengan cepat terhadap teknologi dan lingkungan kerja baru.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mt-10">
+                <div class="p-6 border border-slate-100 rounded-2xl bg-slate-50">
+                    <h3 class="font-semibold mb-2 italic">Pendidikan</h3>
+                    <p class="text-sm text-slate-500">D3 Manajemen Informatika</p>
+                    <p class="text-sm font-medium">Politeknik Negeri Jember (2022 - 2025)</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl bg-slate-50">
+                    <h3 class="font-semibold mb-2 italic">Minat</h3>
+                    <p class="text-sm text-slate-500">Web Programming, Database Administration, & UI/UX Design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Skills & Tools</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 text-center font-medium">HTML & CSS</div>
+                <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 text-center font-medium">Laravel (PHP)</div>
+                <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 text-center font-medium">MySQL</div>
+                <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 text-center font-medium">MS Office</div>
+                <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 text-center font-medium">Tailwind CSS</div>
+                <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 text-center font-medium">JavaScript</div>
+                <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 text-center font-medium">UI/UX Design</div>
+                <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 text-center font-medium">Git / GitHub</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Project Terakhir</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-slate-200"></div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Sistem Informasi Inventaris</h3>
+                        <p class="text-slate-600 text-sm mb-4">Aplikasi web untuk manajemen stok barang menggunakan Laravel dan MySQL. (Tugas Akhir)</p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-semibold px-3 py-1 bg-slate-100 rounded-full">Laravel</span>
+                            <span class="text-xs font-semibold px-3 py-1 bg-slate-100 rounded-full">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-slate-100"></div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Landing Page UMKM</h3>
+                        <p class="text-slate-600 text-sm mb-4">Pembuatan website profil bisnis untuk meningkatkan branding produk lokal secara online.</p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-semibold px-3 py-1 bg-slate-100 rounded-full">HTML</span>
+                            <span class="text-xs font-semibold px-3 py-1 bg-slate-100 rounded-full">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Mari Terhubung</h2>
+            <p class="text-slate-600 mb-10">Saya terbuka untuk kesempatan kerja full-time maupun freelance.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="mailto:emailanda@gmail.com" class="bg-white border border-slate-200 px-6 py-4 rounded-2xl flex items-center justify-center gap-2 hover:bg-slate-50 transition">
+                    <span>📧</span> emailanda@gmail.com
+                </a>
+                <a href="https://wa.me/62812345678" target="_blank" class="bg-green-500 text-white px-6 py-4 rounded-2xl flex items-center justify-center gap-2 hover:bg-green-600 transition">
+                    <span>💬</span> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-400 text-sm border-t border-slate-100 bg-white">
+        <p>&copy; 2024 Nama Anda. Built with Passion.</p>
+    </footer>
+
+</body>
+</html> -->
